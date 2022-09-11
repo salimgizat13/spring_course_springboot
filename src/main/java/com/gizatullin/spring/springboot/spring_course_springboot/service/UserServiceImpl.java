@@ -21,13 +21,13 @@ public class UserServiceImpl implements UserService {
         userRepository.save(user);
     }
 
-    public User updateUser (long id) {
-       User updatedUser = getUserById(id);
-        userRepository.save(updatedUser);
-       return updatedUser;
+    public User updateUser (User user) {
+        userRepository.save(user);
+       return user;
     }
 
     public void deleteUser (long id) {
+
         userRepository.delete(getUserById(id));
     }
 

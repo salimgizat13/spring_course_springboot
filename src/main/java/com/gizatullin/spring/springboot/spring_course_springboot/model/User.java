@@ -2,6 +2,7 @@ package com.gizatullin.spring.springboot.spring_course_springboot.model;
 
 import jakarta.persistence.*;
 
+
 @Entity
 @Table(name = "usersboot")
 public class User {
